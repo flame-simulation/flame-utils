@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>flame_utils.io package &mdash; flame-utils  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
     <link rel="shortcut icon" href="../_static/frib-favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,14 +31,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> flame-utils
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            flame-utils
           </a>
               <div class="version">
-                0.4.1
+                0.5.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -63,10 +70,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../api.html">Application Programming Interface</a> &raquo;</li>
-          <li><a href="flame_utils.html">flame_utils package</a> &raquo;</li>
-      <li>flame_utils.io package</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../api.html">Application Programming Interface</a></li>
+          <li class="breadcrumb-item"><a href="flame_utils.html">flame_utils package</a></li>
+      <li class="breadcrumb-item active">flame_utils.io package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/apidocs/flame_utils.io.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,37 +84,37 @@
            <div itemprop="articleBody">
              
   <section id="flame-utils-io-package">
-<h1>flame_utils.io package<a class="headerlink" href="#flame-utils-io-package" title="Permalink to this headline"></a></h1>
+<h1>flame_utils.io package<a class="headerlink" href="#flame-utils-io-package" title="Permalink to this heading"></a></h1>
 <section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 </section>
 <section id="module-flame_utils.io.lattice">
-<span id="flame-utils-io-lattice-module"></span><h2>flame_utils.io.lattice module<a class="headerlink" href="#module-flame_utils.io.lattice" title="Permalink to this headline"></a></h2>
+<span id="flame-utils-io-lattice-module"></span><h2>flame_utils.io.lattice module<a class="headerlink" href="#module-flame_utils.io.lattice" title="Permalink to this heading"></a></h2>
 <p>FLAME lattice operations.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="flame_utils.io.lattice.generate_latfile">
 <span class="sig-prename descclassname"><span class="pre">flame_utils.io.lattice.</span></span><span class="sig-name descname"><span class="pre">generate_latfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machine</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/flame_utils/io/lattice.html#generate_latfile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flame_utils.io.lattice.generate_latfile" title="Permalink to this definition"></a></dt>
 <dd><p>Generate lattice file for the usage of FLAME code.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>machine :</strong></dt><dd><p>FLAME machine object.</p>
+<dt><strong>machine</strong></dt><dd><p>FLAME machine object.</p>
 </dd>
-<dt><strong>latfile :</strong></dt><dd><p>File name for generated lattice file.</p>
+<dt><strong>latfile</strong></dt><dd><p>File name for generated lattice file.</p>
 </dd>
-<dt><strong>original :</strong></dt><dd><p>File name for original lattice file to keep user comments and indents. (optional)</p>
+<dt><strong>original</strong></dt><dd><p>File name for original lattice file to keep user comments and indents. (optional)</p>
 </dd>
-<dt><strong>state :</strong></dt><dd><p>BeamState object, accept FLAME internal State object also. (optional)</p>
+<dt><strong>state</strong></dt><dd><p>BeamState object, accept FLAME internal State object also. (optional)</p>
 </dd>
-<dt><strong>out :</strong></dt><dd><p>New stream paramter, file stream. (optional)</p>
+<dt><strong>out</strong></dt><dd><p>New stream paramter, file stream. (optional)</p>
 </dd>
-<dt><strong>start :</strong></dt><dd><p>Start element (id or name) of generated lattice. (optional)</p>
+<dt><strong>start</strong></dt><dd><p>Start element (id or name) of generated lattice. (optional)</p>
 </dd>
-<dt><strong>end :</strong></dt><dd><p>End element (id or name) of generated lattice. (optional)</p>
+<dt><strong>end</strong></dt><dd><p>End element (id or name) of generated lattice. (optional)</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>filename</strong><span class="classifier">str</span></dt><dd><p>None if failed to generate lattice file, or the out file name.</p>
 </dd>
@@ -143,7 +150,7 @@ but <code class="docutils literal notranslate"><span class="pre">m.conf()[&quot;
 
 </section>
 <section id="module-flame_utils.io.output">
-<span id="flame-utils-io-output-module"></span><h2>flame_utils.io.output module<a class="headerlink" href="#module-flame_utils.io.output" title="Permalink to this headline"></a></h2>
+<span id="flame-utils-io-output-module"></span><h2>flame_utils.io.output module<a class="headerlink" href="#module-flame_utils.io.output" title="Permalink to this heading"></a></h2>
 <p>Output from FLAME.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="flame_utils.io.output.convert_results">
@@ -151,13 +158,13 @@ but <code class="docutils literal notranslate"><span class="pre">m.conf()[&quot;
 <dd><p>Convert all beam states of results generated by <code class="xref py py-func docutils literal notranslate"><span class="pre">run()</span></code> method
 to be <code class="docutils literal notranslate"><span class="pre">BeamState</span></code> object.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>res</strong><span class="classifier">list of tuple</span></dt><dd><p>List of propagation results.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>list of tuple</dt><dd><p>Tuple of <code class="docutils literal notranslate"><span class="pre">(r,</span> <span class="pre">s)</span></code>, where <code class="docutils literal notranslate"><span class="pre">r</span></code> is list of results at each monitor
 points, <code class="docutils literal notranslate"><span class="pre">s</span></code> is <code class="docutils literal notranslate"><span class="pre">BeamState</span></code> object after the last monitor point.</p>
@@ -172,15 +179,15 @@ points, <code class="docutils literal notranslate"><span class="pre">s</span></c
 <span class="sig-prename descclassname"><span class="pre">flame_utils.io.output.</span></span><span class="sig-name descname"><span class="pre">collect_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kws</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/flame_utils/io/output.html#collect_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flame_utils.io.output.collect_data" title="Permalink to this definition"></a></dt>
 <dd><p>Collect data of interest from propagation results.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>result :</strong></dt><dd><p>Propagation results with <code class="docutils literal notranslate"><span class="pre">BeamState</span></code> object.</p>
+<dt><strong>result</strong></dt><dd><p>Propagation results with <code class="docutils literal notranslate"><span class="pre">BeamState</span></code> object.</p>
 </dd>
-<dt><strong>args :</strong></dt><dd><p>Names of attribute, separated by comma.</p>
+<dt><strong>args</strong></dt><dd><p>Names of attribute, separated by comma.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>dict</dt><dd><p>Dict of <code class="docutils literal notranslate"><span class="pre">{k1:v1,</span> <span class="pre">k2,v2...}</span></code>, keys are from keyword parameters.</p>
 </dd>
@@ -213,31 +220,31 @@ points, <code class="docutils literal notranslate"><span class="pre">s</span></c
 
 </section>
 <section id="module-flame_utils.io">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flame_utils.io" title="Permalink to this headline"></a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flame_utils.io" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="flame_utils.io.generate_latfile">
 <span class="sig-prename descclassname"><span class="pre">flame_utils.io.</span></span><span class="sig-name descname"><span class="pre">generate_latfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machine</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/flame_utils/io/lattice.html#generate_latfile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flame_utils.io.generate_latfile" title="Permalink to this definition"></a></dt>
 <dd><p>Generate lattice file for the usage of FLAME code.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>machine :</strong></dt><dd><p>FLAME machine object.</p>
+<dt><strong>machine</strong></dt><dd><p>FLAME machine object.</p>
 </dd>
-<dt><strong>latfile :</strong></dt><dd><p>File name for generated lattice file.</p>
+<dt><strong>latfile</strong></dt><dd><p>File name for generated lattice file.</p>
 </dd>
-<dt><strong>original :</strong></dt><dd><p>File name for original lattice file to keep user comments and indents. (optional)</p>
+<dt><strong>original</strong></dt><dd><p>File name for original lattice file to keep user comments and indents. (optional)</p>
 </dd>
-<dt><strong>state :</strong></dt><dd><p>BeamState object, accept FLAME internal State object also. (optional)</p>
+<dt><strong>state</strong></dt><dd><p>BeamState object, accept FLAME internal State object also. (optional)</p>
 </dd>
-<dt><strong>out :</strong></dt><dd><p>New stream paramter, file stream. (optional)</p>
+<dt><strong>out</strong></dt><dd><p>New stream paramter, file stream. (optional)</p>
 </dd>
-<dt><strong>start :</strong></dt><dd><p>Start element (id or name) of generated lattice. (optional)</p>
+<dt><strong>start</strong></dt><dd><p>Start element (id or name) of generated lattice. (optional)</p>
 </dd>
-<dt><strong>end :</strong></dt><dd><p>End element (id or name) of generated lattice. (optional)</p>
+<dt><strong>end</strong></dt><dd><p>End element (id or name) of generated lattice. (optional)</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>filename</strong><span class="classifier">str</span></dt><dd><p>None if failed to generate lattice file, or the out file name.</p>
 </dd>
@@ -277,13 +284,13 @@ but <code class="docutils literal notranslate"><span class="pre">m.conf()[&quot;
 <dd><p>Convert all beam states of results generated by <code class="xref py py-func docutils literal notranslate"><span class="pre">run()</span></code> method
 to be <code class="docutils literal notranslate"><span class="pre">BeamState</span></code> object.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>res</strong><span class="classifier">list of tuple</span></dt><dd><p>List of propagation results.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>list of tuple</dt><dd><p>Tuple of <code class="docutils literal notranslate"><span class="pre">(r,</span> <span class="pre">s)</span></code>, where <code class="docutils literal notranslate"><span class="pre">r</span></code> is list of results at each monitor
 points, <code class="docutils literal notranslate"><span class="pre">s</span></code> is <code class="docutils literal notranslate"><span class="pre">BeamState</span></code> object after the last monitor point.</p>
@@ -298,15 +305,15 @@ points, <code class="docutils literal notranslate"><span class="pre">s</span></c
 <span class="sig-prename descclassname"><span class="pre">flame_utils.io.</span></span><span class="sig-name descname"><span class="pre">collect_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kws</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/flame_utils/io/output.html#collect_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flame_utils.io.collect_data" title="Permalink to this definition"></a></dt>
 <dd><p>Collect data of interest from propagation results.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>result :</strong></dt><dd><p>Propagation results with <code class="docutils literal notranslate"><span class="pre">BeamState</span></code> object.</p>
+<dt><strong>result</strong></dt><dd><p>Propagation results with <code class="docutils literal notranslate"><span class="pre">BeamState</span></code> object.</p>
 </dd>
-<dt><strong>args :</strong></dt><dd><p>Names of attribute, separated by comma.</p>
+<dt><strong>args</strong></dt><dd><p>Names of attribute, separated by comma.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>dict</dt><dd><p>Dict of <code class="docutils literal notranslate"><span class="pre">{k1:v1,</span> <span class="pre">k2,v2...}</span></code>, keys are from keyword parameters.</p>
 </dd>
@@ -352,7 +359,7 @@ points, <code class="docutils literal notranslate"><span class="pre">s</span></c
 
   <div role="contentinfo">
     <p>&#169; Copyright 2018-2020, Facility for Rare Isotope Beams, Michigan State University.
-      <span class="lastupdated">Last updated on Oct 27, 2021.
+      <span class="lastupdated">Last updated on Sep 26, 2024.
       </span></p>
   </div>
 

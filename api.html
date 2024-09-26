@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Application Programming Interface &mdash; flame-utils  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
     <link rel="shortcut icon" href="_static/frib-favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -28,14 +31,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> flame-utils
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            flame-utils
           </a>
               <div class="version">
-                0.4.1
+                0.5.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -66,8 +73,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Application Programming Interface</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Application Programming Interface</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -78,45 +85,764 @@
            <div itemprop="articleBody">
              
   <section id="application-programming-interface">
-<span id="api"></span><h1>Application Programming Interface<a class="headerlink" href="#application-programming-interface" title="Permalink to this headline"></a></h1>
+<span id="api"></span><h1>Application Programming Interface<a class="headerlink" href="#application-programming-interface" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="apidocs/flame_utils.html">flame_utils</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="apidocs/flame_utils.html#subpackages">Subpackages</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.core.html">flame_utils.core package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#module-flame_utils.core.element">flame_utils.core.element module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#module-flame_utils.core.model">flame_utils.core.model module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#module-flame_utils.core.state">flame_utils.core.state module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#module-flame_utils.core">Module contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#module-flame_utils.core.element">flame_utils.core.element module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.get_all_types"><code class="docutils literal notranslate"><span class="pre">get_all_types()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.get_all_names"><code class="docutils literal notranslate"><span class="pre">get_all_names()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.inspect_lattice"><code class="docutils literal notranslate"><span class="pre">inspect_lattice()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.get_element"><code class="docutils literal notranslate"><span class="pre">get_element()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.get_index_by_type"><code class="docutils literal notranslate"><span class="pre">get_index_by_type()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.get_index_by_name"><code class="docutils literal notranslate"><span class="pre">get_index_by_name()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.get_names_by_pattern"><code class="docutils literal notranslate"><span class="pre">get_names_by_pattern()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.insert_element"><code class="docutils literal notranslate"><span class="pre">insert_element()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.element.pop_element"><code class="docutils literal notranslate"><span class="pre">pop_element()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#module-flame_utils.core.model">flame_utils.core.model module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame"><code class="docutils literal notranslate"><span class="pre">ModelFlame</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.latfile"><code class="docutils literal notranslate"><span class="pre">ModelFlame.latfile</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.machine</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.bmstate"><code class="docutils literal notranslate"><span class="pre">ModelFlame.bmstate</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.init_machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.init_machine()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.load_bmstate"><code class="docutils literal notranslate"><span class="pre">ModelFlame.load_bmstate()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.find"><code class="docutils literal notranslate"><span class="pre">ModelFlame.find()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.conf"><code class="docutils literal notranslate"><span class="pre">ModelFlame.conf()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.get_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_element()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.inspect_lattice"><code class="docutils literal notranslate"><span class="pre">ModelFlame.inspect_lattice()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.get_all_types"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_all_types()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.get_all_names"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_all_names()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.get_index_by_type"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_index_by_type()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.get_index_by_name"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_index_by_name()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.run"><code class="docutils literal notranslate"><span class="pre">ModelFlame.run()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.convert_results"><code class="docutils literal notranslate"><span class="pre">ModelFlame.convert_results()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.collect_data"><code class="docutils literal notranslate"><span class="pre">ModelFlame.collect_data()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.configure"><code class="docutils literal notranslate"><span class="pre">ModelFlame.configure()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.reconfigure"><code class="docutils literal notranslate"><span class="pre">ModelFlame.reconfigure()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.clone_machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.clone_machine()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.insert_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.insert_element()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.pop_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.pop_element()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.generate_latfile"><code class="docutils literal notranslate"><span class="pre">ModelFlame.generate_latfile()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.ModelFlame.get_transfer_matrix"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_transfer_matrix()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.propagate"><code class="docutils literal notranslate"><span class="pre">propagate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.configure"><code class="docutils literal notranslate"><span class="pre">configure()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.model.scale_by_factor"><code class="docutils literal notranslate"><span class="pre">scale_by_factor()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#module-flame_utils.core.state">flame_utils.core.state module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState"><code class="docutils literal notranslate"><span class="pre">BeamState</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.state"><code class="docutils literal notranslate"><span class="pre">BeamState.state</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.pos"><code class="docutils literal notranslate"><span class="pre">BeamState.pos</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_bg"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_bg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonEk</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_IonEs"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonEs</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_IonQ"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonQ</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_IonW"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonW</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_IonZ"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonZ</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_phis"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_phis</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_SampleIonK"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_SampleIonK</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_SampleFreq"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_SampleFreq</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ref_Brho"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_Brho</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.beta"><code class="docutils literal notranslate"><span class="pre">BeamState.beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.bg"><code class="docutils literal notranslate"><span class="pre">BeamState.bg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.IonEk</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.IonEs"><code class="docutils literal notranslate"><span class="pre">BeamState.IonEs</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.IonQ"><code class="docutils literal notranslate"><span class="pre">BeamState.IonQ</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.IonW"><code class="docutils literal notranslate"><span class="pre">BeamState.IonW</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.IonZ"><code class="docutils literal notranslate"><span class="pre">BeamState.IonZ</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.phis"><code class="docutils literal notranslate"><span class="pre">BeamState.phis</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.SampleIonK"><code class="docutils literal notranslate"><span class="pre">BeamState.SampleIonK</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.SampleFreq"><code class="docutils literal notranslate"><span class="pre">BeamState.SampleFreq</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.Brho"><code class="docutils literal notranslate"><span class="pre">BeamState.Brho</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.moment0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.moment0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.moment0"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.moment1"><code class="docutils literal notranslate"><span class="pre">BeamState.moment1</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.moment1_env"><code class="docutils literal notranslate"><span class="pre">BeamState.moment1_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.x0"><code class="docutils literal notranslate"><span class="pre">BeamState.x0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xp0"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.y0"><code class="docutils literal notranslate"><span class="pre">BeamState.y0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yp0"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.phi0"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.dEk0"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.x0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.x0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xp0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.y0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.y0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yp0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.phi0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.dEk0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xrms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xprms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yrms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yprms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.phirms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.phirms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.dEkrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkrms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.x0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.x0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xp0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.y0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.y0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yp0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.phi0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.dEk0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.last_caviphi0"><code class="docutils literal notranslate"><span class="pre">BeamState.last_caviphi0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.transfer_matrix"><code class="docutils literal notranslate"><span class="pre">BeamState.transfer_matrix</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.clone"><code class="docutils literal notranslate"><span class="pre">BeamState.clone()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.xemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.yemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.zemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xnemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.xnemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ynemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.ynemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.znemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.znemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xnemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xnemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ynemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ynemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.beammatrix"><code class="docutils literal notranslate"><span class="pre">BeamState.beammatrix</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.beammatrix_all"><code class="docutils literal notranslate"><span class="pre">BeamState.beammatrix_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cenvector"><code class="docutils literal notranslate"><span class="pre">BeamState.cenvector</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cenvector_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cenvector_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cxpy"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpy</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cxpy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpy_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cxpyp"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpyp</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cxpyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpyp_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cxy"><code class="docutils literal notranslate"><span class="pre">BeamState.cxy</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cxy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxy_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cxyp"><code class="docutils literal notranslate"><span class="pre">BeamState.cxyp</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.cxyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxyp_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.dEkcen"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.dEkcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.dEkrms"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkrms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.phicen"><code class="docutils literal notranslate"><span class="pre">BeamState.phicen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.phicen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.phicen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.phirms"><code class="docutils literal notranslate"><span class="pre">BeamState.phirms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.rmsvector"><code class="docutils literal notranslate"><span class="pre">BeamState.rmsvector</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.transmat"><code class="docutils literal notranslate"><span class="pre">BeamState.transmat</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xcen"><code class="docutils literal notranslate"><span class="pre">BeamState.xcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xeps"><code class="docutils literal notranslate"><span class="pre">BeamState.xeps</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xeps_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.xepsn</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xepsn_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xpcen"><code class="docutils literal notranslate"><span class="pre">BeamState.xpcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xpcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xpcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xprms"><code class="docutils literal notranslate"><span class="pre">BeamState.xprms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xrms"><code class="docutils literal notranslate"><span class="pre">BeamState.xrms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsa</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsa_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsb</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsb_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsg_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ycen"><code class="docutils literal notranslate"><span class="pre">BeamState.ycen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ycen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ycen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yeps"><code class="docutils literal notranslate"><span class="pre">BeamState.yeps</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yeps_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.yepsn</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yepsn_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ypcen"><code class="docutils literal notranslate"><span class="pre">BeamState.ypcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ypcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ypcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yprms"><code class="docutils literal notranslate"><span class="pre">BeamState.yprms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.yrms"><code class="docutils literal notranslate"><span class="pre">BeamState.yrms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsa</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsa_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsb</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsb_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsg_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zcen"><code class="docutils literal notranslate"><span class="pre">BeamState.zcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zeps"><code class="docutils literal notranslate"><span class="pre">BeamState.zeps</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zeps_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.zepsn</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zepsn_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.znemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.znemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zpcen"><code class="docutils literal notranslate"><span class="pre">BeamState.zpcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zpcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zpcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zprms"><code class="docutils literal notranslate"><span class="pre">BeamState.zprms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zprms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zrms"><code class="docutils literal notranslate"><span class="pre">BeamState.zrms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.zrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zrms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsa</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsa_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsb</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsb_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsg_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_beta_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_beta_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_beta_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_alpha</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_alpha</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_alpha</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_alpha_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_alpha_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_alpha_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.xtwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_gamma_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ytwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_gamma_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.ztwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_gamma_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.couple_xy"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xy</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.couple_xpy"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpy</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.couple_xyp"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xyp</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.couple_xpyp"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpyp</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.couple_xy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xy_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.couple_xpy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpy_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.couple_xyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xyp_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.couple_xpyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpyp_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.set_IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.set_IonEk()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.set_moment0"><code class="docutils literal notranslate"><span class="pre">BeamState.set_moment0()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.set_twiss"><code class="docutils literal notranslate"><span class="pre">BeamState.set_twiss()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.get_twiss"><code class="docutils literal notranslate"><span class="pre">BeamState.get_twiss()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.get_couple"><code class="docutils literal notranslate"><span class="pre">BeamState.get_couple()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.BeamState.set_couple"><code class="docutils literal notranslate"><span class="pre">BeamState.set_couple()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.generate_source"><code class="docutils literal notranslate"><span class="pre">generate_source()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.get_brho"><code class="docutils literal notranslate"><span class="pre">get_brho()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.couple_index"><code class="docutils literal notranslate"><span class="pre">couple_index()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.get_couple"><code class="docutils literal notranslate"><span class="pre">get_couple()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.set_couple"><code class="docutils literal notranslate"><span class="pre">set_couple()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.state.twiss_to_matrix"><code class="docutils literal notranslate"><span class="pre">twiss_to_matrix()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.core.html#module-flame_utils.core">Module contents</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState"><code class="docutils literal notranslate"><span class="pre">BeamState</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.state"><code class="docutils literal notranslate"><span class="pre">BeamState.state</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.pos"><code class="docutils literal notranslate"><span class="pre">BeamState.pos</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_bg"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_bg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonEk</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_IonEs"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonEs</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_IonQ"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonQ</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_IonW"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonW</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_IonZ"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonZ</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_phis"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_phis</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_SampleIonK"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_SampleIonK</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_SampleFreq"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_SampleFreq</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ref_Brho"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_Brho</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.beta"><code class="docutils literal notranslate"><span class="pre">BeamState.beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.bg"><code class="docutils literal notranslate"><span class="pre">BeamState.bg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.IonEk</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.IonEs"><code class="docutils literal notranslate"><span class="pre">BeamState.IonEs</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.IonQ"><code class="docutils literal notranslate"><span class="pre">BeamState.IonQ</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.IonW"><code class="docutils literal notranslate"><span class="pre">BeamState.IonW</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.IonZ"><code class="docutils literal notranslate"><span class="pre">BeamState.IonZ</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.phis"><code class="docutils literal notranslate"><span class="pre">BeamState.phis</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.SampleIonK"><code class="docutils literal notranslate"><span class="pre">BeamState.SampleIonK</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.SampleFreq"><code class="docutils literal notranslate"><span class="pre">BeamState.SampleFreq</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.Brho"><code class="docutils literal notranslate"><span class="pre">BeamState.Brho</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.moment0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.moment0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.moment0"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.moment1"><code class="docutils literal notranslate"><span class="pre">BeamState.moment1</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.moment1_env"><code class="docutils literal notranslate"><span class="pre">BeamState.moment1_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.x0"><code class="docutils literal notranslate"><span class="pre">BeamState.x0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xp0"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.y0"><code class="docutils literal notranslate"><span class="pre">BeamState.y0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yp0"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.phi0"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.dEk0"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.x0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.x0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xp0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.y0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.y0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yp0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.phi0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.dEk0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0_env</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xrms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xprms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yrms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yprms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.phirms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.phirms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.dEkrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkrms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.x0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.x0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xp0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.y0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.y0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yp0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.phi0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.dEk0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0_rms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.last_caviphi0"><code class="docutils literal notranslate"><span class="pre">BeamState.last_caviphi0</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.transfer_matrix"><code class="docutils literal notranslate"><span class="pre">BeamState.transfer_matrix</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.clone"><code class="docutils literal notranslate"><span class="pre">BeamState.clone()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.xemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.yemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.zemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xnemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.xnemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ynemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.ynemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.znemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.znemittance</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xnemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xnemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ynemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ynemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.beammatrix"><code class="docutils literal notranslate"><span class="pre">BeamState.beammatrix</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.beammatrix_all"><code class="docutils literal notranslate"><span class="pre">BeamState.beammatrix_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cenvector"><code class="docutils literal notranslate"><span class="pre">BeamState.cenvector</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cenvector_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cenvector_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cxpy"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpy</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cxpy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpy_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cxpyp"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpyp</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cxpyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpyp_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cxy"><code class="docutils literal notranslate"><span class="pre">BeamState.cxy</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cxy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxy_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cxyp"><code class="docutils literal notranslate"><span class="pre">BeamState.cxyp</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.cxyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxyp_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.dEkcen"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.dEkcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.dEkrms"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkrms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.phicen"><code class="docutils literal notranslate"><span class="pre">BeamState.phicen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.phicen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.phicen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.phirms"><code class="docutils literal notranslate"><span class="pre">BeamState.phirms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.rmsvector"><code class="docutils literal notranslate"><span class="pre">BeamState.rmsvector</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.transmat"><code class="docutils literal notranslate"><span class="pre">BeamState.transmat</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xcen"><code class="docutils literal notranslate"><span class="pre">BeamState.xcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xeps"><code class="docutils literal notranslate"><span class="pre">BeamState.xeps</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xeps_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.xepsn</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xepsn_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xpcen"><code class="docutils literal notranslate"><span class="pre">BeamState.xpcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xpcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xpcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xprms"><code class="docutils literal notranslate"><span class="pre">BeamState.xprms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xrms"><code class="docutils literal notranslate"><span class="pre">BeamState.xrms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsa</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsa_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsb</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsb_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsg_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ycen"><code class="docutils literal notranslate"><span class="pre">BeamState.ycen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ycen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ycen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yeps"><code class="docutils literal notranslate"><span class="pre">BeamState.yeps</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yeps_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.yepsn</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yepsn_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ypcen"><code class="docutils literal notranslate"><span class="pre">BeamState.ypcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ypcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ypcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yprms"><code class="docutils literal notranslate"><span class="pre">BeamState.yprms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.yrms"><code class="docutils literal notranslate"><span class="pre">BeamState.yrms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsa</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsa_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsb</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsb_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsg_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zcen"><code class="docutils literal notranslate"><span class="pre">BeamState.zcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zeps"><code class="docutils literal notranslate"><span class="pre">BeamState.zeps</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zeps_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.zepsn</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zepsn_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.znemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.znemittance_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zpcen"><code class="docutils literal notranslate"><span class="pre">BeamState.zpcen</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zpcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zpcen_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zprms"><code class="docutils literal notranslate"><span class="pre">BeamState.zprms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zprms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zrms"><code class="docutils literal notranslate"><span class="pre">BeamState.zrms</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.zrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zrms_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsa</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsa_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsb</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsb_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsg</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsg_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_beta</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_beta_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_beta_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_beta_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_alpha</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_alpha</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_alpha</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_alpha_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_alpha_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_alpha_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_gamma</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.xtwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_gamma_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ytwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_gamma_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.ztwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_gamma_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.couple_xy"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xy</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.couple_xpy"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpy</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.couple_xyp"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xyp</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.couple_xpyp"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpyp</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.couple_xy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xy_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.couple_xpy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpy_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.couple_xyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xyp_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.couple_xpyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpyp_all</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.set_IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.set_IonEk()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.set_moment0"><code class="docutils literal notranslate"><span class="pre">BeamState.set_moment0()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.set_twiss"><code class="docutils literal notranslate"><span class="pre">BeamState.set_twiss()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.get_twiss"><code class="docutils literal notranslate"><span class="pre">BeamState.get_twiss()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.get_couple"><code class="docutils literal notranslate"><span class="pre">BeamState.get_couple()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.BeamState.set_couple"><code class="docutils literal notranslate"><span class="pre">BeamState.set_couple()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.generate_source"><code class="docutils literal notranslate"><span class="pre">generate_source()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.twiss_to_matrix"><code class="docutils literal notranslate"><span class="pre">twiss_to_matrix()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.get_all_types"><code class="docutils literal notranslate"><span class="pre">get_all_types()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.get_all_names"><code class="docutils literal notranslate"><span class="pre">get_all_names()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.inspect_lattice"><code class="docutils literal notranslate"><span class="pre">inspect_lattice()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.insert_element"><code class="docutils literal notranslate"><span class="pre">insert_element()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.get_element"><code class="docutils literal notranslate"><span class="pre">get_element()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.get_index_by_type"><code class="docutils literal notranslate"><span class="pre">get_index_by_type()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.get_index_by_name"><code class="docutils literal notranslate"><span class="pre">get_index_by_name()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.get_names_by_pattern"><code class="docutils literal notranslate"><span class="pre">get_names_by_pattern()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.propagate"><code class="docutils literal notranslate"><span class="pre">propagate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.configure"><code class="docutils literal notranslate"><span class="pre">configure()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame"><code class="docutils literal notranslate"><span class="pre">ModelFlame</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.latfile"><code class="docutils literal notranslate"><span class="pre">ModelFlame.latfile</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.machine</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.bmstate"><code class="docutils literal notranslate"><span class="pre">ModelFlame.bmstate</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.init_machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.init_machine()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.load_bmstate"><code class="docutils literal notranslate"><span class="pre">ModelFlame.load_bmstate()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.find"><code class="docutils literal notranslate"><span class="pre">ModelFlame.find()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.conf"><code class="docutils literal notranslate"><span class="pre">ModelFlame.conf()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.get_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_element()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.inspect_lattice"><code class="docutils literal notranslate"><span class="pre">ModelFlame.inspect_lattice()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.get_all_types"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_all_types()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.get_all_names"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_all_names()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.get_index_by_type"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_index_by_type()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.get_index_by_name"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_index_by_name()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.run"><code class="docutils literal notranslate"><span class="pre">ModelFlame.run()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.convert_results"><code class="docutils literal notranslate"><span class="pre">ModelFlame.convert_results()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.collect_data"><code class="docutils literal notranslate"><span class="pre">ModelFlame.collect_data()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.configure"><code class="docutils literal notranslate"><span class="pre">ModelFlame.configure()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.reconfigure"><code class="docutils literal notranslate"><span class="pre">ModelFlame.reconfigure()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.clone_machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.clone_machine()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.insert_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.insert_element()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.pop_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.pop_element()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.generate_latfile"><code class="docutils literal notranslate"><span class="pre">ModelFlame.generate_latfile()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.core.html#flame_utils.core.ModelFlame.get_transfer_matrix"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_transfer_matrix()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.io.html">flame_utils.io package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.io.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.io.html#module-flame_utils.io.lattice">flame_utils.io.lattice module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.io.html#module-flame_utils.io.output">flame_utils.io.output module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.io.html#module-flame_utils.io">Module contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.io.html#module-flame_utils.io.lattice">flame_utils.io.lattice module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.io.html#flame_utils.io.lattice.generate_latfile"><code class="docutils literal notranslate"><span class="pre">generate_latfile()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.io.html#module-flame_utils.io.output">flame_utils.io.output module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.io.html#flame_utils.io.output.convert_results"><code class="docutils literal notranslate"><span class="pre">convert_results()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.io.html#flame_utils.io.output.collect_data"><code class="docutils literal notranslate"><span class="pre">collect_data()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.io.html#module-flame_utils.io">Module contents</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.io.html#flame_utils.io.generate_latfile"><code class="docutils literal notranslate"><span class="pre">generate_latfile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.io.html#flame_utils.io.convert_results"><code class="docutils literal notranslate"><span class="pre">convert_results()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.io.html#flame_utils.io.collect_data"><code class="docutils literal notranslate"><span class="pre">collect_data()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.misc.html">flame_utils.misc package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.alias">flame_utils.misc.alias module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.confupdate">flame_utils.misc.confupdate module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.listset">flame_utils.misc.listset module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.machsetter">flame_utils.misc.machsetter module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.message">flame_utils.misc.message module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc">Module contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.alias">flame_utils.misc.alias module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.alias.alias"><code class="docutils literal notranslate"><span class="pre">alias()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.confupdate">flame_utils.misc.confupdate module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.confupdate.conf_update"><code class="docutils literal notranslate"><span class="pre">conf_update()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.listset">flame_utils.misc.listset module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.listset.flatten"><code class="docutils literal notranslate"><span class="pre">flatten()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.listset.get_intersection"><code class="docutils literal notranslate"><span class="pre">get_intersection()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.machsetter">flame_utils.misc.machsetter module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.machsetter.machine_setter"><code class="docutils literal notranslate"><span class="pre">machine_setter()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.machsetter.is_zeros_states"><code class="docutils literal notranslate"><span class="pre">is_zeros_states()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.machsetter.get_share_keys"><code class="docutils literal notranslate"><span class="pre">get_share_keys()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc.message">flame_utils.misc.message module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.message.disable_warnings"><code class="docutils literal notranslate"><span class="pre">disable_warnings()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.misc.html#module-flame_utils.misc">Module contents</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.machine_setter"><code class="docutils literal notranslate"><span class="pre">machine_setter()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.flatten"><code class="docutils literal notranslate"><span class="pre">flatten()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.get_intersection"><code class="docutils literal notranslate"><span class="pre">get_intersection()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.alias"><code class="docutils literal notranslate"><span class="pre">alias()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.conf_update"><code class="docutils literal notranslate"><span class="pre">conf_update()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.disable_warnings"><code class="docutils literal notranslate"><span class="pre">disable_warnings()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.misc.html#flame_utils.misc.get_share_keys"><code class="docutils literal notranslate"><span class="pre">get_share_keys()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.viz.html">flame_utils.viz package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.viz.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.viz.html#module-flame_utils.viz.plotlat">flame_utils.viz.plotlat module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.viz.html#module-flame_utils.viz">Module contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.viz.html#module-flame_utils.viz.plotlat">flame_utils.viz.plotlat module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.viz.html#flame_utils.viz.plotlat.hplot"><code class="docutils literal notranslate"><span class="pre">hplot()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.viz.html#flame_utils.viz.plotlat.PlotLat"><code class="docutils literal notranslate"><span class="pre">PlotLat</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.viz.html#flame_utils.viz.plotlat.PlotLat.generate"><code class="docutils literal notranslate"><span class="pre">PlotLat.generate()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.viz.html#flame_utils.viz.plotlat.PlotLat.output"><code class="docutils literal notranslate"><span class="pre">PlotLat.output()</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="apidocs/flame_utils.html#module-flame_utils">Module contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.viz.html#module-flame_utils.viz">Module contents</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.viz.html#flame_utils.viz.PlotLat"><code class="docutils literal notranslate"><span class="pre">PlotLat</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.viz.html#flame_utils.viz.PlotLat.generate"><code class="docutils literal notranslate"><span class="pre">PlotLat.generate()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="apidocs/flame_utils.viz.html#flame_utils.viz.PlotLat.output"><code class="docutils literal notranslate"><span class="pre">PlotLat.output()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="apidocs/flame_utils.viz.html#flame_utils.viz.hplot"><code class="docutils literal notranslate"><span class="pre">hplot()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="apidocs/flame_utils.html#module-flame_utils">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState"><code class="docutils literal notranslate"><span class="pre">BeamState</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.state"><code class="docutils literal notranslate"><span class="pre">BeamState.state</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.pos"><code class="docutils literal notranslate"><span class="pre">BeamState.pos</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_beta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_bg"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_bg</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonEk</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_IonEs"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonEs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_IonQ"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonQ</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_IonW"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonW</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_IonZ"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_IonZ</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_phis"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_phis</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_SampleIonK"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_SampleIonK</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_SampleFreq"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_SampleFreq</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ref_Brho"><code class="docutils literal notranslate"><span class="pre">BeamState.ref_Brho</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.beta"><code class="docutils literal notranslate"><span class="pre">BeamState.beta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.bg"><code class="docutils literal notranslate"><span class="pre">BeamState.bg</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.IonEk</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.IonEs"><code class="docutils literal notranslate"><span class="pre">BeamState.IonEs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.IonQ"><code class="docutils literal notranslate"><span class="pre">BeamState.IonQ</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.IonW"><code class="docutils literal notranslate"><span class="pre">BeamState.IonW</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.IonZ"><code class="docutils literal notranslate"><span class="pre">BeamState.IonZ</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.phis"><code class="docutils literal notranslate"><span class="pre">BeamState.phis</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.SampleIonK"><code class="docutils literal notranslate"><span class="pre">BeamState.SampleIonK</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.SampleFreq"><code class="docutils literal notranslate"><span class="pre">BeamState.SampleFreq</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.Brho"><code class="docutils literal notranslate"><span class="pre">BeamState.Brho</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.moment0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0_env</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.moment0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0_rms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.moment0"><code class="docutils literal notranslate"><span class="pre">BeamState.moment0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.moment1"><code class="docutils literal notranslate"><span class="pre">BeamState.moment1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.moment1_env"><code class="docutils literal notranslate"><span class="pre">BeamState.moment1_env</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.x0"><code class="docutils literal notranslate"><span class="pre">BeamState.x0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xp0"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.y0"><code class="docutils literal notranslate"><span class="pre">BeamState.y0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yp0"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.phi0"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.dEk0"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.x0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.x0_env</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xp0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0_env</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.y0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.y0_env</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yp0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0_env</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.phi0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0_env</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.dEk0_env"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0_env</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xrms_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xprms_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yrms_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yprms_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.phirms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.phirms_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.dEkrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkrms_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.x0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.x0_rms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xp0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.xp0_rms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.y0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.y0_rms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yp0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.yp0_rms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.phi0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.phi0_rms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.dEk0_rms"><code class="docutils literal notranslate"><span class="pre">BeamState.dEk0_rms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.last_caviphi0"><code class="docutils literal notranslate"><span class="pre">BeamState.last_caviphi0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.transfer_matrix"><code class="docutils literal notranslate"><span class="pre">BeamState.transfer_matrix</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.clone"><code class="docutils literal notranslate"><span class="pre">BeamState.clone()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.xemittance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.yemittance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.zemittance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xemittance_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yemittance_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zemittance_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xnemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.xnemittance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ynemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.ynemittance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.znemittance"><code class="docutils literal notranslate"><span class="pre">BeamState.znemittance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xnemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xnemittance_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ynemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ynemittance_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.beammatrix"><code class="docutils literal notranslate"><span class="pre">BeamState.beammatrix</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.beammatrix_all"><code class="docutils literal notranslate"><span class="pre">BeamState.beammatrix_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cenvector"><code class="docutils literal notranslate"><span class="pre">BeamState.cenvector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cenvector_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cenvector_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cxpy"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cxpy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpy_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cxpyp"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpyp</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cxpyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxpyp_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cxy"><code class="docutils literal notranslate"><span class="pre">BeamState.cxy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cxy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxy_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cxyp"><code class="docutils literal notranslate"><span class="pre">BeamState.cxyp</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.cxyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.cxyp_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.dEkcen"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkcen</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.dEkcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkcen_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.dEkrms"><code class="docutils literal notranslate"><span class="pre">BeamState.dEkrms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.phicen"><code class="docutils literal notranslate"><span class="pre">BeamState.phicen</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.phicen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.phicen_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.phirms"><code class="docutils literal notranslate"><span class="pre">BeamState.phirms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.rmsvector"><code class="docutils literal notranslate"><span class="pre">BeamState.rmsvector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.transmat"><code class="docutils literal notranslate"><span class="pre">BeamState.transmat</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xcen"><code class="docutils literal notranslate"><span class="pre">BeamState.xcen</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xcen_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xeps"><code class="docutils literal notranslate"><span class="pre">BeamState.xeps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xeps_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.xepsn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xepsn_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xpcen"><code class="docutils literal notranslate"><span class="pre">BeamState.xpcen</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xpcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xpcen_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xprms"><code class="docutils literal notranslate"><span class="pre">BeamState.xprms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xrms"><code class="docutils literal notranslate"><span class="pre">BeamState.xrms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsa</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsa_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsb</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsb_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsg</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwsg_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ycen"><code class="docutils literal notranslate"><span class="pre">BeamState.ycen</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ycen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ycen_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yeps"><code class="docutils literal notranslate"><span class="pre">BeamState.yeps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yeps_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.yepsn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.yepsn_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ypcen"><code class="docutils literal notranslate"><span class="pre">BeamState.ypcen</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ypcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ypcen_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yprms"><code class="docutils literal notranslate"><span class="pre">BeamState.yprms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.yrms"><code class="docutils literal notranslate"><span class="pre">BeamState.yrms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsa</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsa_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsb</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsb_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsg</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwsg_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zcen"><code class="docutils literal notranslate"><span class="pre">BeamState.zcen</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zcen_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zeps"><code class="docutils literal notranslate"><span class="pre">BeamState.zeps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zeps_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zeps_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zepsn"><code class="docutils literal notranslate"><span class="pre">BeamState.zepsn</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zepsn_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zepsn_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.znemittance_all"><code class="docutils literal notranslate"><span class="pre">BeamState.znemittance_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zpcen"><code class="docutils literal notranslate"><span class="pre">BeamState.zpcen</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zpcen_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zpcen_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zprms"><code class="docutils literal notranslate"><span class="pre">BeamState.zprms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zprms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zprms_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zrms"><code class="docutils literal notranslate"><span class="pre">BeamState.zrms</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.zrms_all"><code class="docutils literal notranslate"><span class="pre">BeamState.zrms_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwsa"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsa</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwsa_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsa_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwsb"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsb</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwsb_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsb_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwsg"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsg</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwsg_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwsg_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_beta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_beta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwiss_beta"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_beta</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_beta_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_beta_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwiss_beta_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_beta_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_alpha</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_alpha</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwiss_alpha"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_alpha</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_alpha_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_alpha_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwiss_alpha_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_alpha_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwiss_gamma"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.xtwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.xtwiss_gamma_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ytwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ytwiss_gamma_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.ztwiss_gamma_all"><code class="docutils literal notranslate"><span class="pre">BeamState.ztwiss_gamma_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.couple_xy"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.couple_xpy"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.couple_xyp"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xyp</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.couple_xpyp"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpyp</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.couple_xy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xy_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.couple_xpy_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpy_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.couple_xyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xyp_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.couple_xpyp_all"><code class="docutils literal notranslate"><span class="pre">BeamState.couple_xpyp_all</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.set_IonEk"><code class="docutils literal notranslate"><span class="pre">BeamState.set_IonEk()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.set_moment0"><code class="docutils literal notranslate"><span class="pre">BeamState.set_moment0()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.set_twiss"><code class="docutils literal notranslate"><span class="pre">BeamState.set_twiss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.get_twiss"><code class="docutils literal notranslate"><span class="pre">BeamState.get_twiss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.get_couple"><code class="docutils literal notranslate"><span class="pre">BeamState.get_couple()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.BeamState.set_couple"><code class="docutils literal notranslate"><span class="pre">BeamState.set_couple()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame"><code class="docutils literal notranslate"><span class="pre">ModelFlame</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.latfile"><code class="docutils literal notranslate"><span class="pre">ModelFlame.latfile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.machine</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.bmstate"><code class="docutils literal notranslate"><span class="pre">ModelFlame.bmstate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.init_machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.init_machine()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.load_bmstate"><code class="docutils literal notranslate"><span class="pre">ModelFlame.load_bmstate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.find"><code class="docutils literal notranslate"><span class="pre">ModelFlame.find()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.conf"><code class="docutils literal notranslate"><span class="pre">ModelFlame.conf()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.get_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_element()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.inspect_lattice"><code class="docutils literal notranslate"><span class="pre">ModelFlame.inspect_lattice()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.get_all_types"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_all_types()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.get_all_names"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_all_names()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.get_index_by_type"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_index_by_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.get_index_by_name"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_index_by_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.run"><code class="docutils literal notranslate"><span class="pre">ModelFlame.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.convert_results"><code class="docutils literal notranslate"><span class="pre">ModelFlame.convert_results()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.collect_data"><code class="docutils literal notranslate"><span class="pre">ModelFlame.collect_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.configure"><code class="docutils literal notranslate"><span class="pre">ModelFlame.configure()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.reconfigure"><code class="docutils literal notranslate"><span class="pre">ModelFlame.reconfigure()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.clone_machine"><code class="docutils literal notranslate"><span class="pre">ModelFlame.clone_machine()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.insert_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.insert_element()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.pop_element"><code class="docutils literal notranslate"><span class="pre">ModelFlame.pop_element()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.generate_latfile"><code class="docutils literal notranslate"><span class="pre">ModelFlame.generate_latfile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.ModelFlame.get_transfer_matrix"><code class="docutils literal notranslate"><span class="pre">ModelFlame.get_transfer_matrix()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.collect_data"><code class="docutils literal notranslate"><span class="pre">collect_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.configure"><code class="docutils literal notranslate"><span class="pre">configure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.convert_results"><code class="docutils literal notranslate"><span class="pre">convert_results()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.generate_latfile"><code class="docutils literal notranslate"><span class="pre">generate_latfile()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.get_all_names"><code class="docutils literal notranslate"><span class="pre">get_all_names()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.get_all_types"><code class="docutils literal notranslate"><span class="pre">get_all_types()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.get_element"><code class="docutils literal notranslate"><span class="pre">get_element()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.get_index_by_name"><code class="docutils literal notranslate"><span class="pre">get_index_by_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.get_index_by_type"><code class="docutils literal notranslate"><span class="pre">get_index_by_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.get_names_by_pattern"><code class="docutils literal notranslate"><span class="pre">get_names_by_pattern()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.inspect_lattice"><code class="docutils literal notranslate"><span class="pre">inspect_lattice()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.propagate"><code class="docutils literal notranslate"><span class="pre">propagate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.machine_setter"><code class="docutils literal notranslate"><span class="pre">machine_setter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.flatten"><code class="docutils literal notranslate"><span class="pre">flatten()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.get_intersection"><code class="docutils literal notranslate"><span class="pre">get_intersection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.hplot"><code class="docutils literal notranslate"><span class="pre">hplot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.PlotLat"><code class="docutils literal notranslate"><span class="pre">PlotLat</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.PlotLat.generate"><code class="docutils literal notranslate"><span class="pre">PlotLat.generate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="apidocs/flame_utils.html#flame_utils.PlotLat.output"><code class="docutils literal notranslate"><span class="pre">PlotLat.output()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -135,7 +861,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2018-2020, Facility for Rare Isotope Beams, Michigan State University.
-      <span class="lastupdated">Last updated on Oct 27, 2021.
+      <span class="lastupdated">Last updated on Sep 26, 2024.
       </span></p>
   </div>
 
