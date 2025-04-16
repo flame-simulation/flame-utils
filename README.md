@@ -1,13 +1,12 @@
 # flame-utils
 
-Python utilities for FLAME, see documentation: [https://frib-high-level-controls.github.io/flame-utils/](https://frib-high-level-controls.github.io/flame-utils/)
+Python utilities for [FLAME](https://github.com/flame-simulation/FLAME).
 
 
 ## Installation
 
 ```sh
-git clone https://github.com/frib-high-level-controls/flame-utils.git
+git clone git@github.com:flame-simulation/flame-utils.git
 cd flame-utils
-git checkout dev
 python setup.py install
 ```

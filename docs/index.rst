@@ -6,7 +6,7 @@
 Welcome to flame-utils documentation
 ====================================
 
-- `FLAME source <https://github.com/frib-high-level-controls/FLAME>`_
+- `FLAME source <https://github.com/flame-simulation/FLAME>`_
 - `FLAME documentation <https://kryv.github.io/FLAMEdoc/>`_
 
 .. toctree::
