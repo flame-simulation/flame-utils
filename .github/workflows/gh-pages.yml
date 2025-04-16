@@ -22,7 +22,8 @@ jobs:
 
       - name: Build docs
         run: |
-          pip install flame-code sphinx sphinx_rtd_theme numpydoc
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install sphinx sphinx_rtd_theme numpydoc
           cd docs
           export PYTHONPATH=../
           make html
