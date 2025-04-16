@@ -22,7 +22,7 @@ jobs:
 
       - name: Build docs
         run: |
-          pip install sphinx sphinx_rtd_theme numpydoc
+          pip install flame-code sphinx sphinx_rtd_theme numpydoc
           cd docs
           export PYTHONPATH=../
           make html
