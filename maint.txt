@@ -1,0 +1,7 @@
+- All source changes should be merged to master branch.
+- Release:
+  - Merge master to main
+  - Create and push a new tag, will:
+    - Update gh-pages
+    - Release new wheels
+
