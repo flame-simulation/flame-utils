@@ -1,23 +1,21 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>flame_utils.core.state &mdash; flame-utils  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
 
   
     <link rel="shortcut icon" href="../../../_static/frib-favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=b3ba4146"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=b3ba4146"></script>
+      <script src="../../../_static/doctools.js?v=888ff710"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
@@ -34,9 +32,6 @@
           <a href="../../../index.html" class="icon icon-home">
             flame-utils
           </a>
-              <div class="version">
-                0.5.0
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -85,13 +80,13 @@
 <span class="sd">&quot;&quot;&quot;Abstracted FLAME beam state class.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">import</span> <span class="nn">flame</span>
-<span class="kn">import</span> <span class="nn">logging</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">flame</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="kn">from</span> <span class="nn">flame_utils.misc</span> <span class="kn">import</span> <span class="n">is_zeros_states</span>
-<span class="kn">from</span> <span class="nn">flame_utils.misc</span> <span class="kn">import</span> <span class="n">machine_setter</span>
-<span class="kn">from</span> <span class="nn">flame_utils.misc</span> <span class="kn">import</span> <span class="n">alias</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">flame_utils.misc</span><span class="w"> </span><span class="kn">import</span> <span class="n">is_zeros_states</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">flame_utils.misc</span><span class="w"> </span><span class="kn">import</span> <span class="n">machine_setter</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">flame_utils.misc</span><span class="w"> </span><span class="kn">import</span> <span class="n">alias</span>
 
 <span class="n">__authors__</span> <span class="o">=</span> <span class="s2">&quot;Tong Zhang&quot;</span>
 <span class="n">__copyright__</span> <span class="o">=</span> <span class="s2">&quot;(c) 2016-2017, Facility for Rare Isotope beams, &quot;</span> \
@@ -115,7 +110,7 @@
 <span class="n">c0</span> <span class="o">=</span> <span class="mf">2.99792458e8</span> <span class="c1"># m/s</span>
 
 <div class="viewcode-block" id="BeamState"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState">[docs]</a><span class="nd">@alias</span>
-<span class="k">class</span> <span class="nc">BeamState</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">BeamState</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;FLAME beam state, from which simulated results could be retrieved.</span>
 
 <span class="sd">   Class attributes of reference beam parameter:</span>
@@ -353,7 +348,7 @@
         <span class="s1">&#39;cxyp_all&#39;</span><span class="p">:</span> <span class="s1">&#39;couple_xyp_all&#39;</span><span class="p">,</span>
         <span class="s1">&#39;cxpyp_all&#39;</span><span class="p">:</span> <span class="s1">&#39;couple_xpyp_all&#39;</span><span class="p">,</span>
     <span class="p">}</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kws</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kws</span><span class="p">):</span>
         <span class="n">_bmstate</span> <span class="o">=</span> <span class="n">kws</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;bmstate&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
         <span class="n">_machine</span> <span class="o">=</span> <span class="n">kws</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;machine&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
         <span class="n">_latfile</span> <span class="o">=</span> <span class="n">kws</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;latfile&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
@@ -383,212 +378,212 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span> <span class="o">=</span> <span class="n">DUMMY_MACHINE</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">state</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">state</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;flame._internal.State: FLAME state object, also could be</span>
 <span class="sd">        initialized with BeamState object&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span>
 
     <span class="nd">@state</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">flame</span><span class="o">.</span><span class="n">_internal</span><span class="o">.</span><span class="n">State</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_states</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
         <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">BeamState</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_states</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">state</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">pos</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">pos</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: longitudinally propagating position, [m]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">)</span>
 
     <span class="nd">@pos</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">pos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">pos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: speed in the unit of light velocity in vacuum of reference</span>
 <span class="sd">        charge state, Lorentz beta, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_beta&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_beta</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_beta&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">_get_ek_from_beta</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_IonEs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">ref_IonEk</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_bg</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_bg</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: multiplication of beta and gamma of reference charge state, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_bg&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_bg</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_bg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_bg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_bg&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="n">ref_beta</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span><span class="o">+</span><span class="mf">1.0</span><span class="o">/</span><span class="n">x</span><span class="o">/</span><span class="n">x</span><span class="p">)</span>
         <span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">_get_ek_from_beta</span><span class="p">(</span><span class="n">ref_beta</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_IonEs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">ref_IonEk</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: relativistic energy of reference charge state, Lorentz gamma, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_gamma&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_gamma</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_gamma&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="n">ref_beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span><span class="o">-</span><span class="mf">1.0</span><span class="o">/</span><span class="n">x</span><span class="o">/</span><span class="n">x</span><span class="p">)</span>
         <span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">_get_ek_from_beta</span><span class="p">(</span><span class="n">ref_beta</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_IonEs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">ref_IonEk</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: kinetic energy of reference charge state, [eV/u]</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonEk&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_IonEk</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">x</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_IonEs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonEs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: rest energy of reference charge state, [eV/u]</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonEs&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_IonEs</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_IonEs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonEs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonEs&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_IonQ</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonQ</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;int: macro particle number of reference charge state, [1]</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonQ&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_IonQ</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_IonQ</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonQ</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonQ&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_IonW</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonW</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: total energy of reference charge state, [eV/u],</span>
 <span class="sd">        i.e. :math:`W = E_s + E_k`&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonW&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_IonW</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_IonW</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonW</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonW&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">x</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">ref_IonEs</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_IonZ</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonZ</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: reference charge to mass ratio,</span>
 <span class="sd">        e.g. :math:`^{33^{+}}_{238}U: Q(33)/A(238)`, [Q/A]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonZ&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_IonZ</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_IonZ</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_IonZ</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_IonZ&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_phis</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_phis</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: absolute synchrotron phase of reference charge state,</span>
 <span class="sd">        [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_phis&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_phis</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_phis</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_phis</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_phis&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">phis</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="n">v</span><span class="o">-</span><span class="n">x</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_SampleIonK</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_SampleIonK</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: wave-vector in cavities with different beta values of</span>
 <span class="sd">        reference charge state, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_SampleIonK&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_SampleFreq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_SampleFreq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: sampling frequency of reference charge state, [Hz]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_SampleFreq&#39;</span><span class="p">)</span>
 
     <span class="nd">@ref_SampleFreq</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_SampleFreq</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_SampleFreq</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;ref_SampleFreq&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ref_Brho</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_Brho</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: magnetic rigidity of reference charge state, [Tm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">get_brho</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ref_IonEk</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_IonZ</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_IonEs</span><span class="p">)</span>
 
     <span class="nd">@ref_Brho</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">ref_Brho</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ref_Brho</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">_get_ek_from_brho</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_IonZ</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_IonEs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">ref_IonEk</span> <span class="o">=</span> <span class="n">ref_IonEk</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: speed in the unit of light velocity in vacuum of all charge</span>
 <span class="sd">        states, Lorentz beta, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;beta&#39;</span><span class="p">)</span>
 
     <span class="nd">@beta</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">beta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">beta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;beta&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="n">IonEk</span> <span class="o">=</span> <span class="n">_get_ek_from_beta</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">IonEs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">IonEk</span> <span class="o">=</span> <span class="n">IonEk</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">bg</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">bg</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: multiplication of beta and gamma of all charge states, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;bg&#39;</span><span class="p">)</span>
 
     <span class="nd">@bg</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">bg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">bg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;bg&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="n">beta</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span><span class="o">+</span><span class="mf">1.0</span><span class="o">/</span><span class="n">x</span><span class="o">/</span><span class="n">x</span><span class="p">)</span>
         <span class="n">IonEk</span> <span class="o">=</span> <span class="n">_get_ek_from_beta</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">IonEs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">IonEk</span> <span class="o">=</span> <span class="n">IonEk</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: relativistic energy of all charge states, Lorentz gamma, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;gamma&#39;</span><span class="p">)</span>
 
     <span class="nd">@gamma</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;gamma&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span><span class="o">-</span><span class="mf">1.0</span><span class="o">/</span><span class="n">x</span><span class="o">/</span><span class="n">x</span><span class="p">)</span>
         <span class="n">IonEk</span> <span class="o">=</span> <span class="n">_get_ek_from_beta</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">IonEs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">IonEk</span> <span class="o">=</span> <span class="n">IonEk</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: kinetic energy of all charge states, [eV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonEk&#39;</span><span class="p">)</span>
 
     <span class="nd">@IonEk</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonEk&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">IonEk</span> <span class="o">=</span> <span class="n">x</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">IonEs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonEs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: rest energy of all charge states, [eV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonEs&#39;</span><span class="p">)</span>
 
     <span class="nd">@IonEs</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">IonEs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonEs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonEs&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">IonQ</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonQ</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: macro particle number of all charge states</span>
 
 <span class="sd">        Notes</span>
@@ -598,23 +593,23 @@
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonQ&#39;</span><span class="p">)</span>
 
     <span class="nd">@IonQ</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">IonQ</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonQ</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonQ&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">IonW</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonW</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: total energy of all charge states, [eV/u],</span>
 <span class="sd">        i.e. :math:`W = E_s + E_k`&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonW&#39;</span><span class="p">)</span>
 
     <span class="nd">@IonW</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">IonW</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonW</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonW&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">IonEk</span> <span class="o">=</span> <span class="n">x</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">IonEs</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">IonZ</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonZ</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: all charge to mass ratios</span>
 
 <span class="sd">        Notes</span>
@@ -624,48 +619,48 @@
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonZ&#39;</span><span class="p">)</span>
 
     <span class="nd">@IonZ</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">IonZ</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">IonZ</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;IonZ&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">phis</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">phis</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: absolute synchrotron phase of all charge states, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;phis&#39;</span><span class="p">)</span>
 
     <span class="nd">@phis</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">phis</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">phis</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;phis&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="n">v</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">ref_phis</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">SampleIonK</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">SampleIonK</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: wave-vector in cavities with different beta values of all</span>
 <span class="sd">        charge states, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;SampleIonK&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">SampleFreq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">SampleFreq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: sampling frequency of all charge states, [Hz]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;SampleFreq&#39;</span><span class="p">)</span>
 
     <span class="nd">@SampleFreq</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">SampleFreq</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">SampleFreq</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;SampleFreq&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">Brho</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">Brho</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: magnetic rigidity of reference charge state, [Tm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">get_brho</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">IonEk</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">IonZ</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">IonEs</span><span class="p">)</span>
 
     <span class="nd">@Brho</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">Brho</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">Brho</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="n">IonEk</span> <span class="o">=</span> <span class="n">_get_ek_from_brho</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">IonZ</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">IonEs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_IonEk</span><span class="p">(</span><span class="n">IonEk</span> <span class="o">=</span> <span class="n">IonEk</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">moment0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">moment0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: weight average of centroid for all charge states, array of</span>
 <span class="sd">        ``[x, x&#39;, y, y&#39;, phi, dEk, 1]``, with the units of</span>
 <span class="sd">        ``[mm, rad, mm, rad, rad, MeV/u, 1]``.</span>
@@ -686,7 +681,7 @@
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;moment0_env&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">moment0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">moment0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: rms beam envelope, part of statistical results from</span>
 <span class="sd">        ``moment1``.</span>
 
@@ -702,17 +697,17 @@
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;moment0_rms&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">moment0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">moment0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: centroid for all charge states, array of</span>
 <span class="sd">        ``[x, x&#39;, y, y&#39;, phi, dEk, 1]``&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;moment0&#39;</span><span class="p">)</span>
 
     <span class="nd">@moment0</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">moment0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">moment0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;moment0&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">moment1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">moment1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Array: covariance matrices of all charge states, for each charge</span>
 <span class="sd">        state, the covariance matrix could be written as:</span>
 
@@ -731,21 +726,21 @@
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;moment1&#39;</span><span class="p">)</span>
 
     <span class="nd">@moment1</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">moment1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">moment1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;moment1&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">moment1_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">moment1_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: averaged covariance matrices of all charge states&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="p">,</span> <span class="s1">&#39;moment1_env&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">x0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">x0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: x centroid for all charge states, [mm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="nd">@x0</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">x0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">x0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">x0</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="n">v</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -753,12 +748,12 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input shape </span><span class="si">{}</span><span class="s1"> does not match to the original shape </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">x0</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xp0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xp0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: x centroid divergence for all charge states, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
     <span class="nd">@xp0</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">xp0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xp0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">xp0</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="n">v</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -766,12 +761,12 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input shape </span><span class="si">{}</span><span class="s1"> does not match to the original shape </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">xp0</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">y0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">y0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: y centroid for all charge states, [mm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 
     <span class="nd">@y0</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">y0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">y0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">y0</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="n">v</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -779,12 +774,12 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input shape </span><span class="si">{}</span><span class="s1"> does not match to the original shape </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y0</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">yp0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yp0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: y centroid divergence for all charge states, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
 
     <span class="nd">@yp0</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">yp0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yp0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">yp0</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="n">v</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -792,13 +787,13 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input shape </span><span class="si">{}</span><span class="s1"> does not match to the original shape </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">yp0</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">phi0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">phi0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: longitudinal beam length, measured in RF frequency for all</span>
 <span class="sd">        charge states, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
 
     <span class="nd">@phi0</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">phi0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">phi0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">phi0</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="n">v</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -806,13 +801,13 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input shape </span><span class="si">{}</span><span class="s1"> does not match to the original shape </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">phi0</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">dEk0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">dEk0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: kinetic energy deviation w.r.t. reference charge state,</span>
 <span class="sd">        for all charge states, [MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
 
     <span class="nd">@dEk0</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">dEk0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">dEk0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">dEk0</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="n">v</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -820,12 +815,12 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input shape </span><span class="si">{}</span><span class="s1"> does not match to the original shape </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dEk0</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">x0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">x0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of all charge states for :math:`x`, [mm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_env</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="nd">@x0_env</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">x0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">x0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x0</span><span class="p">))</span> <span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -833,12 +828,12 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input type should be a float.&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xp0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xp0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of all charge states for :math:`x&#39;`, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_env</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
     <span class="nd">@xp0_env</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">xp0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xp0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">xp0</span><span class="p">))</span> <span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -846,12 +841,12 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input type should be a float.&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">y0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">y0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of all charge states for :math:`y`, [mm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_env</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 
     <span class="nd">@y0_env</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">y0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">y0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y0</span><span class="p">))</span> <span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -859,12 +854,12 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input type should be a float.&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">yp0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yp0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of all charge states for :math:`y&#39;`, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_env</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
 
     <span class="nd">@yp0_env</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">yp0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yp0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yp0</span><span class="p">))</span> <span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -872,13 +867,13 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input type should be a float.&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">phi0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">phi0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of all charge states for :math:`\phi`,</span>
 <span class="sd">        [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_env</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
 
     <span class="nd">@phi0_env</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">phi0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">phi0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">phi0</span><span class="p">))</span> <span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -886,13 +881,13 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input type must be a float.&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">dEk0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">dEk0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of all charge states for :math:`\delta E_k`,</span>
 <span class="sd">        [MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_env</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
 
     <span class="nd">@dEk0_env</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">dEk0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">dEk0_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dEk0</span><span class="p">))</span> <span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
@@ -900,67 +895,67 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;input type must be a float.&#39;</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xrms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xrms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: general rms beam envelope for :math:`x` of all charge states, [mm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">:])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xprms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xprms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: general rms beam envelope for :math:`x&#39;` of all charge states, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">:])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">yrms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yrms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: general rms beam envelope for :math:`y` of all charge states, [mm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">:])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">yprms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yprms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: general rms beam envelope for :math:`y&#39;` of all charge states, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="p">:])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">phirms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">phirms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: general rms beam envelope for :math:`\phi` of all charge states, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="p">:])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">dEkrms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">dEkrms_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: general rms beam envelope for :math:`\delta E_k` of all charge states, [MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="p">:])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">x0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">x0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: general rms beam envelope for :math:`x`, [mm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_rms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xp0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xp0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: general rms beam envelope for :math:`x&#39;`, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_rms</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">y0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">y0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: general rms beam envelope for :math:`y`, [mm]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_rms</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">yp0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yp0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: general rms beam envelope for :math:`y&#39;`, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_rms</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">phi0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">phi0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: general rms beam envelope for :math:`\phi`, [rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_rms</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">dEk0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">dEk0_rms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: general rms beam envelope for :math:`\delta E_k`, [MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment0_rms</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">last_caviphi0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">last_caviphi0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: Last RF cavity&#39;s driven phase, [deg]&quot;&quot;&quot;</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">ret</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">last_caviphi0</span>
@@ -970,16 +965,16 @@
         <span class="k">return</span> <span class="n">ret</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">transfer_matrix</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">transfer_matrix</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: Transfer matrix of the last element&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">transmat</span>
 
-<div class="viewcode-block" id="BeamState.clone"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.clone">[docs]</a>    <span class="k">def</span> <span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="BeamState.clone"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.clone">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return a copy of Beamstate object.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">BeamState</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">clone</span><span class="p">())</span></div>
 
-    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">moment0_env</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:.6g}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">moment0_env</span><span class="p">])</span>
             <span class="k">return</span> <span class="s2">&quot;BeamState: moment0 mean=[7](</span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">moment0_env</span><span class="p">)</span>
@@ -987,196 +982,196 @@
             <span class="k">return</span> <span class="s2">&quot;Incompleted initializaion.&quot;</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of geometrical x emittance, [mm-mrad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]))</span><span class="o">*</span><span class="mf">1e3</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">yemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of geometrical y emittance, [mm-mrad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]))</span><span class="o">*</span><span class="mf">1e3</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">zemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">zemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of geometrical z emittance, [rad-MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]))</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: geometrical x emittance of all charge states, [mm-mrad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">]))</span><span class="o">*</span><span class="mf">1e3</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bg</span><span class="p">))])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">yemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">yemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: geometrical y emittance of all charge states, [mm-mrad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="n">i</span><span class="p">]))</span><span class="o">*</span><span class="mf">1e3</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bg</span><span class="p">))])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">zemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">zemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: geometrical z emittance of all charge states, [rad-MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="n">i</span><span class="p">]))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bg</span><span class="p">))])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xnemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xnemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of normalized x emittance, [mm-mrad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_bg</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">xeps</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ynemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ynemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of normalized y emittance, [mm-mrad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_bg</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">yeps</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">znemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">znemittance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of normalized z emittance, [rad-MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_bg</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">zeps</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xnemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xnemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: normalized x emittance of all charge states, [mm-mrad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_bg</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">xeps_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ynemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ynemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: normalized y emittance of all charge states, [mm-mrad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_bg</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">yeps_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">znemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">znemittance_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: normalized z emittance of all charge states, [rad-MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ref_bg</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">zeps_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xtwiss_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xtwiss_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss beta x, [m/rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">xeps</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ytwiss_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ytwiss_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss beta y, [m/rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">yeps</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ztwiss_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ztwiss_beta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss beta z, [rad/MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">zeps</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xtwiss_beta_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xtwiss_beta_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss beta x of all charge states, [m/rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">:]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">xeps_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ytwiss_beta_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ytwiss_beta_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss beta y of all charge states, [m/rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">:]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">yeps_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ztwiss_beta_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ztwiss_beta_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss beta z of all charge states, [rad/MeV/u]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="p">:]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">zeps_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xtwiss_alpha</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xtwiss_alpha</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss alpha x, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">xeps</span><span class="o">*</span><span class="mf">1e3</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ytwiss_alpha</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ytwiss_alpha</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss alpha y, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">yeps</span><span class="o">*</span><span class="mf">1e3</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ztwiss_alpha</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ztwiss_alpha</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss alpha z, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1_env</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">zeps</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xtwiss_alpha_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xtwiss_alpha_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss alpha x of all charge states, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">:]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">xeps_all</span><span class="o">*</span><span class="mf">1e3</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ytwiss_alpha_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ytwiss_alpha_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss alpha y of all charge states, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="p">:]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">yeps_all</span><span class="o">*</span><span class="mf">1e3</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ztwiss_alpha_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ztwiss_alpha_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss alpha z of all charge states, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="p">:]</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">zeps_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xtwiss_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xtwiss_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss gamma x, [rad/m]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">xtwiss_alpha</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">xtwiss_beta</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ytwiss_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ytwiss_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss gamma y, [rad/m]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">ytwiss_alpha</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">ytwiss_beta</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ztwiss_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ztwiss_gamma</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of twiss gamma z, [MeV/u/rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">ztwiss_alpha</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">ztwiss_beta</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">xtwiss_gamma_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">xtwiss_gamma_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss gamma x of all charge states, [rad/m]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">xtwiss_alpha_all</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">xtwiss_beta_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ytwiss_gamma_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ytwiss_gamma_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss gamma y of all charge states, [rad/m]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">ytwiss_alpha_all</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">ytwiss_beta_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">ztwiss_gamma_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">ztwiss_gamma_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: twiss gamma z of all charge states, [MeV/u/rad]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">ztwiss_alpha_all</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">ztwiss_beta_all</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">couple_xy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">couple_xy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of normalized x-y coupling term, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_couple</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">cs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">couple_xpy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">couple_xpy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of normalized xp-y coupling term, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_couple</span><span class="p">(</span><span class="s1">&#39;xp&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">cs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">couple_xyp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">couple_xyp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of normalized x-yp coupling term, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_couple</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;yp&#39;</span><span class="p">,</span> <span class="n">cs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">couple_xpyp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">couple_xpyp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;float: weight average of normalized xp-yp coupling term, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_couple</span><span class="p">(</span><span class="s1">&#39;xp&#39;</span><span class="p">,</span> <span class="s1">&#39;yp&#39;</span><span class="p">,</span> <span class="n">cs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">couple_xy_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">couple_xy_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: normalized x-y coupling term of all charge states, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">get_couple</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bg</span><span class="p">))])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">couple_xpy_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">couple_xpy_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: normalized xp-y coupling term of all charge states, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">get_couple</span><span class="p">(</span><span class="s1">&#39;xp&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bg</span><span class="p">))])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">couple_xyp_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">couple_xyp_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: normalized x-yp coupling term of all charge states, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">get_couple</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;yp&#39;</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bg</span><span class="p">))])</span>
 
     <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">couple_xpyp_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">couple_xpyp_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Array: normalized xp-yp coupling term of all charge states, [1]&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">get_couple</span><span class="p">(</span><span class="s1">&#39;xp&#39;</span><span class="p">,</span> <span class="s1">&#39;yp&#39;</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bg</span><span class="p">))])</span>
 
-<div class="viewcode-block" id="BeamState.set_IonEk"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.set_IonEk">[docs]</a>    <span class="k">def</span> <span class="nf">set_IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IonEk</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ref_IonEk</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="BeamState.set_IonEk"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.set_IonEk">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_IonEk</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IonEk</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ref_IonEk</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Set longitudinal parameters based on reference/actual enargy</span>
 
 <span class="sd">        Parameters</span>
@@ -1204,7 +1199,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">set_moment0</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">ref_IonEk</span><span class="p">)</span><span class="o">*</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BeamState.set_moment0"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.set_moment0">[docs]</a>    <span class="k">def</span> <span class="nf">set_moment0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="BeamState.set_moment0"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.set_moment0">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_moment0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Set moment0 vector based on the centroid information</span>
 
 <span class="sd">        Parameters</span>
@@ -1256,7 +1251,7 @@
 
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BeamState.set_twiss"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.set_twiss">[docs]</a>    <span class="k">def</span> <span class="nf">set_twiss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rmssize</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">emittance</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">nemittance</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="BeamState.set_twiss"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.set_twiss">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_twiss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rmssize</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">emittance</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">nemittance</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Set moment1 matrix by using Twiss parameter.</span>
 
 <span class="sd">        Parameters</span>
@@ -1310,7 +1305,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span> <span class="o">=</span> <span class="n">mat</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BeamState.get_twiss"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.get_twiss">[docs]</a>    <span class="k">def</span> <span class="nf">get_twiss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="BeamState.get_twiss"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.get_twiss">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_twiss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get twiss parameters of moment1 matrix</span>
 
 <span class="sd">        Parameters</span>
@@ -1347,7 +1342,7 @@
 
         <span class="k">return</span> <span class="n">tws</span></div>
 
-<div class="viewcode-block" id="BeamState.get_couple"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.get_couple">[docs]</a>    <span class="k">def</span> <span class="nf">get_couple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="BeamState.get_couple"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.get_couple">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_couple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get normalized coupling term of moment1 matrix</span>
 
 <span class="sd">        Parameters</span>
@@ -1371,7 +1366,7 @@
 
         <span class="k">return</span> <span class="n">get_couple</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BeamState.set_couple"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.set_couple">[docs]</a>    <span class="k">def</span> <span class="nf">set_couple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">cs</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="BeamState.set_couple"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.BeamState.set_couple">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_couple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">cs</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Set normalized coupling term of moment1 matrix</span>
 
 <span class="sd">        Parameters</span>
@@ -1391,7 +1386,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_states</span><span class="o">.</span><span class="n">moment1</span> <span class="o">=</span> <span class="n">mat</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dm</span><span class="o">.</span><span class="n">propagate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span></div></div>
 
-<div class="viewcode-block" id="generate_source"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.generate_source">[docs]</a><span class="k">def</span> <span class="nf">generate_source</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">sconf</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="generate_source"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.generate_source">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">generate_source</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">sconf</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Generate/Update FLAME source element from FLAME beam state object.</span>
 
 <span class="sd">    Parameters</span>
@@ -1441,15 +1436,15 @@
 
     <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;index&#39;</span><span class="p">:</span> <span class="n">sconf_indx</span><span class="p">,</span> <span class="s1">&#39;properties&#39;</span><span class="p">:</span> <span class="n">sconf_prop</span><span class="p">}</span></div>
 
-<span class="k">def</span> <span class="nf">_get_ek_from_beta</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">es</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_get_ek_from_beta</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">es</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate kinetic energy [eV/u] from Lorentz beta&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">es</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1e0</span> <span class="o">-</span> <span class="n">beta</span><span class="o">*</span><span class="n">beta</span><span class="p">)</span> <span class="o">-</span> <span class="n">es</span>
 
-<span class="k">def</span> <span class="nf">_get_ek_from_brho</span><span class="p">(</span><span class="n">brho</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">es</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_get_ek_from_brho</span><span class="p">(</span><span class="n">brho</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">es</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate kinetic energy [eV/u] from magnetic rigidity&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">es</span><span class="o">*</span><span class="n">es</span> <span class="o">+</span> <span class="p">(</span><span class="n">brho</span><span class="o">*</span><span class="n">c0</span><span class="o">*</span><span class="n">z</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">es</span>
 
-<div class="viewcode-block" id="get_brho"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.get_brho">[docs]</a><span class="k">def</span> <span class="nf">get_brho</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">es</span><span class="p">):</span>
+<div class="viewcode-block" id="get_brho"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.get_brho">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">get_brho</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">es</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Get magnetic rigidity</span>
 
 <span class="sd">    Parameters</span>
@@ -1471,7 +1466,7 @@
     <span class="n">brho</span> <span class="o">=</span> <span class="n">bet</span><span class="o">*</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="n">es</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">c0</span><span class="o">*</span><span class="n">z</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">brho</span></div>
 
-<div class="viewcode-block" id="couple_index"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.couple_index">[docs]</a><span class="k">def</span> <span class="nf">couple_index</span><span class="p">(</span><span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">):</span>
+<div class="viewcode-block" id="couple_index"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.couple_index">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">couple_index</span><span class="p">(</span><span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get index from coordinate information&quot;&quot;&quot;</span>
         <span class="n">crd</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;xp&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;yp&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;zp&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
 
@@ -1492,7 +1487,7 @@
 
         <span class="k">return</span>  <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span></div>
 
-<div class="viewcode-block" id="get_couple"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.get_couple">[docs]</a><span class="k">def</span> <span class="nf">get_couple</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">):</span>
+<div class="viewcode-block" id="get_couple"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.get_couple">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">get_couple</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Get normalized coupling term of moment1 matrix</span>
 
 <span class="sd">    Parameters</span>
@@ -1520,7 +1515,7 @@
 
     <span class="k">return</span> <span class="n">term</span></div>
 
-<div class="viewcode-block" id="set_couple"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.set_couple">[docs]</a><span class="k">def</span> <span class="nf">set_couple</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">):</span>
+<div class="viewcode-block" id="set_couple"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.set_couple">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">set_couple</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">coor1</span><span class="p">,</span> <span class="n">coor2</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Set normalized coupling term of moment1 matrix</span>
 
 <span class="sd">        Parameters</span>
@@ -1547,7 +1542,7 @@
 
         <span class="k">return</span> <span class="n">mat</span></div>
 
-<div class="viewcode-block" id="twiss_to_matrix"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.twiss_to_matrix">[docs]</a><span class="k">def</span> <span class="nf">twiss_to_matrix</span><span class="p">(</span><span class="n">coor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">emittance</span><span class="p">,</span> <span class="n">matrix</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="twiss_to_matrix"><a class="viewcode-back" href="../../../beamstate.html#flame_utils.twiss_to_matrix">[docs]</a><span class="k">def</span><span class="w"> </span><span class="nf">twiss_to_matrix</span><span class="p">(</span><span class="n">coor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">emittance</span><span class="p">,</span> <span class="n">matrix</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Set covariance matrix by using Twiss parameter.</span>
 
 <span class="sd">    Parameters</span>
@@ -1613,7 +1608,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2018-2020, Facility for Rare Isotope Beams, Michigan State University.
-      <span class="lastupdated">Last updated on Sep 26, 2024.
+      <span class="lastupdated">Last updated on Apr 17, 2025.
       </span></p>
   </div>
 

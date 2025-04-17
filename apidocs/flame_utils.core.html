@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
@@ -5,21 +7,17 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>flame_utils.core package &mdash; flame-utils  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
     <link rel="shortcut icon" href="../_static/frib-favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -38,9 +36,6 @@
           <a href="../index.html" class="icon icon-home">
             flame-utils
           </a>
-              <div class="version">
-                0.5.0
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -160,8 +155,8 @@ if failed, print nothing.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;lattice/test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">Machine</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">latfile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">flameutils</span><span class="o">.</span><span class="n">inspect_lattice</span><span class="p">(</span><span class="n">_machine</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
@@ -201,7 +196,7 @@ if failed, print nothing.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fout</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># write to string</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">StringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">StringIO</span><span class="w"> </span><span class="kn">import</span> <span class="n">StringIO</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sio</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">flameutils</span><span class="o">.</span><span class="n">inspect_lattice</span><span class="p">(</span><span class="n">latfile</span><span class="o">=</span><span class="n">latfile</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">sio</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">retstr</span> <span class="o">=</span> <span class="n">sio</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
@@ -253,8 +248,8 @@ is void.</p></li>
 <li><p>Invalid element names or type names will be ignored.</p></li>
 </ul>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;lattice/test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ename</span> <span class="o">=</span> <span class="s1">&#39;LS1_CA01:CAV4_D1150&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">e</span> <span class="o">=</span> <span class="n">flameutils</span><span class="o">.</span><span class="n">get_element</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">ename</span><span class="p">,</span> <span class="n">latfile</span><span class="o">=</span><span class="n">latfile</span><span class="p">)</span>
@@ -318,8 +313,8 @@ list, of indices list, with the order of type.</p>
 <p>If <em>rtype</em> is <code class="docutils literal notranslate"><span class="pre">list</span></code>, list of list would be returned instead of a dict,
 <code class="docutils literal notranslate"><span class="pre">flatten()</span></code> function could be used to flatten the list.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;lattice/test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">Machine</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">latfile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">types</span> <span class="o">=</span> <span class="s1">&#39;stripper&#39;</span>
@@ -373,8 +368,8 @@ list of element indices list</p>
 <p>If <em>rtype</em> is <code class="docutils literal notranslate"><span class="pre">list</span></code>, list of list would be returned instead of a dict,
 <code class="docutils literal notranslate"><span class="pre">flatten()</span></code> function could be used to flatten the list.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;lattice/test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">Machine</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">latfile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">names</span> <span class="o">=</span> <span class="s1">&#39;LS1_CA01:SOL1_D1131_1&#39;</span>
@@ -554,8 +549,8 @@ list of element indices list</p>
 </dl>
 </div>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame_utlis</span> <span class="kn">import</span> <span class="n">ModelFlame</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame_utlis</span><span class="w"> </span><span class="kn">import</span> <span class="n">ModelFlame</span>
 <span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s2">&quot;lattice/test.lat&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fm1</span> <span class="o">=</span> <span class="n">ModelFlame</span><span class="p">()</span>
@@ -1158,8 +1153,8 @@ after the last monitor point.</p>
 <code class="docutils literal notranslate"><span class="pre">configure(machine=m,</span> <span class="pre">c_idx=10,</span> <span class="pre">c_dict={'theta_x':</span> <span class="pre">0.001})</span></code>
 which is just the same as: <code class="docutils literal notranslate"><span class="pre">m.reconfigure(10,</span> <span class="pre">{'theta_x':</span> <span class="pre">0.001})</span></code>.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">Machine</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">latfile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">))</span>
@@ -4656,8 +4651,8 @@ if failed, print nothing.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;lattice/test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">Machine</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">latfile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">flameutils</span><span class="o">.</span><span class="n">inspect_lattice</span><span class="p">(</span><span class="n">_machine</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
@@ -4697,7 +4692,7 @@ if failed, print nothing.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fout</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># write to string</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">StringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">StringIO</span><span class="w"> </span><span class="kn">import</span> <span class="n">StringIO</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sio</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">flameutils</span><span class="o">.</span><span class="n">inspect_lattice</span><span class="p">(</span><span class="n">latfile</span><span class="o">=</span><span class="n">latfile</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">sio</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">retstr</span> <span class="o">=</span> <span class="n">sio</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
@@ -4772,8 +4767,8 @@ is void.</p></li>
 <li><p>Invalid element names or type names will be ignored.</p></li>
 </ul>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;lattice/test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ename</span> <span class="o">=</span> <span class="s1">&#39;LS1_CA01:CAV4_D1150&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">e</span> <span class="o">=</span> <span class="n">flameutils</span><span class="o">.</span><span class="n">get_element</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">ename</span><span class="p">,</span> <span class="n">latfile</span><span class="o">=</span><span class="n">latfile</span><span class="p">)</span>
@@ -4837,8 +4832,8 @@ list, of indices list, with the order of type.</p>
 <p>If <em>rtype</em> is <code class="docutils literal notranslate"><span class="pre">list</span></code>, list of list would be returned instead of a dict,
 <code class="docutils literal notranslate"><span class="pre">flatten()</span></code> function could be used to flatten the list.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;lattice/test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">Machine</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">latfile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">types</span> <span class="o">=</span> <span class="s1">&#39;stripper&#39;</span>
@@ -4892,8 +4887,8 @@ list of element indices list</p>
 <p>If <em>rtype</em> is <code class="docutils literal notranslate"><span class="pre">list</span></code>, list of list would be returned instead of a dict,
 <code class="docutils literal notranslate"><span class="pre">flatten()</span></code> function could be used to flatten the list.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;lattice/test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">Machine</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">latfile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">names</span> <span class="o">=</span> <span class="s1">&#39;LS1_CA01:SOL1_D1131_1&#39;</span>
@@ -5008,8 +5003,8 @@ after the last monitor point.</p>
 <code class="docutils literal notranslate"><span class="pre">configure(machine=m,</span> <span class="pre">c_idx=10,</span> <span class="pre">c_dict={'theta_x':</span> <span class="pre">0.001})</span></code>
 which is just the same as: <code class="docutils literal notranslate"><span class="pre">m.reconfigure(10,</span> <span class="pre">{'theta_x':</span> <span class="pre">0.001})</span></code>.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">phantasy</span> <span class="kn">import</span> <span class="n">flameutils</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">phantasy</span><span class="w"> </span><span class="kn">import</span> <span class="n">flameutils</span>
 <span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s1">&#39;test.lat&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">Machine</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">latfile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">))</span>
@@ -5124,8 +5119,8 @@ which is just the same as: <code class="docutils literal notranslate"><span clas
 </dl>
 </div>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame</span> <span class="kn">import</span> <span class="n">Machine</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flame_utlis</span> <span class="kn">import</span> <span class="n">ModelFlame</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame</span><span class="w"> </span><span class="kn">import</span> <span class="n">Machine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">flame_utlis</span><span class="w"> </span><span class="kn">import</span> <span class="n">ModelFlame</span>
 <span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">latfile</span> <span class="o">=</span> <span class="s2">&quot;lattice/test.lat&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fm1</span> <span class="o">=</span> <span class="n">ModelFlame</span><span class="p">()</span>
@@ -5672,7 +5667,7 @@ element.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2018-2020, Facility for Rare Isotope Beams, Michigan State University.
-      <span class="lastupdated">Last updated on Sep 26, 2024.
+      <span class="lastupdated">Last updated on Apr 17, 2025.
       </span></p>
   </div>
 
